@@ -1,0 +1,148 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Betty's CSS*/
+
+body {
+	background-color: #F5F5F1;
+	font-family: arial;
+	font-size:14px;
+
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#0192B5;
+}
+
+#main {
+	width:960px;
+	margin: 0px auto;
+}
+
+header {
+	margin-top:0px;
+	display: inline-block;
+	width:960px;
+	height:80px;
+	background-color: #ffffff;
+
+}
+
+.header-logo {
+	width: 100px;
+	height: 50px;	
+	float:left;
+}
+
+.header-logo img {
+	margin-left: 10px;
+	margin-top: 10px;
+	width:75px;
+}
+
+.header-search {
+	width: 200px;
+	float:left;
+	margin-top:16px;
+}
+
+.header-browse {
+	display: block;
+width: 200px;
+float: left;
+margin-left:20px;
+margin-top: 10px;
+}
+
+.header-browse ul ul {
+	display:none;
+}
+
+.header-browse ul li:hover > ul {
+		display: block;
+	}
+
+.header-browse ul {
+	background: #efefef; 
+	border:1px #666666;
+	padding: 10px 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+.header-browse ul li a {
+	font-size: 12px;
+}
+
+#content {
+	width:960px;
+}
+
+#side-bar {
+	width:30%;
+	float:left;
+	background-color: #d3d3d3;
+}
+
+#search-results {
+	width:70%;
+	float:right;
+	background-color: #666666;
+}

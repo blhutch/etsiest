@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Betty's Etsy Market </title>
+    <link rel="stylesheet" href="application.css">
+  </head>
+  
+  <body>
+  <div id="main">
+    <header>
+  
+    <div class="header-logo">
+      <a href="http://etsy.com">
+        <img src="https://www.etsy.com/assets/dist/images/etsylogo@2x.20150529203416.png" alt="Etsy">
+      </a>
+    </div>
+    
+    <div class="header-search">
+       <form>
+          <input type="text" name="search-term"><input type="submit" value="Search">
+       </form> 
+    </div>
+
+    <div class="header-browse">
+      <ul>   
+        <li>Browse
+          <ul>
+            <li><a href="#">Father's Day Gifts</a></li>
+            <li><a href="#">Summer Celebrations</a></li>
+            <li><a href="#">Gift Ideas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+  <div id="content">
+
+    <div id="side-bar">
+      All Categories<br>
+      Home & Living<br>
+      Art & Collectibles<br>
+      Weddings<br>
+      Clothing <br>
+    </div><!--side-bar-->   
+
+    <div id="search-results">
+    text text text
+      <ul>
+        <% @results.result.each do |item| %>
+          <%= erb :item, locals: { data: item } %>
+        <% end %>
+
+     </ul>
+    </div><!--search-results-->
+  
+  </div><!--content-->
+  <footer>
+    
+
+  </footer>
+</div><!--main-->
+</body>
+
+</html>
